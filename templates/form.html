@@ -3,18 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      input, label, textarea, h1 {
+        margin: 10px;
+      }
+      input, textarea {
+        border: solid #345eeb 1px;
+        border-radius: 5px;
+        padding: 5px;
+      }
+      label {
+        color: #345eeb;
+      }
+    </style>
     <title>Form</title>
   </head>
   <body style="display: flex; flex-direction: column">
-    <h1>Input Resume Details</h1>
+    <h1 style="color: #1f46cc;">Input Resume Details</h1>
     <form
       action="/resume"
       method="POST"
       style="display: flex; flex-direction: column; width: 60%"
       enctype="multipart/form-data"
     >
-      <label>Enter your image URL</label>
-      <input type="text" name="image" />
+      <label>Enter your image</label>
+      <input type="file" name="image" />
       <label>Personal Information</label>
       <input type="text" name="name" placeholder="Enter Name" />
       <input type="text" name="post" placeholder="Enter Position" />
@@ -80,7 +93,7 @@
         name="project_details_three"
         placeholder="Enter Project details"
       ></textarea>
-      <input type="submit" value="Submit" />
+      <input type="submit" value="Submit" style="background-color: #345eeb; color: #fff;" />
     </form>
   </body>
 </html>
