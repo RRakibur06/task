@@ -1,0 +1,123 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume</title>
+  </head>
+  <body>
+    <h3>{{name}}</h3>
+    <br />
+    <h3>{{post}}</h3>
+    <br />
+    <h3>{{experience}}</h3>
+    <br />
+    <h3>{{education}}</h3>
+    <br />
+    <h3>{{projects}}</h3>
+    <br />
+  </body>
+</html> -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+      }
+      .box-one {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        background-color: #1c4991;
+        color: #ffffff;
+        padding-left: 20px;
+        padding-top: 10px;
+      }
+      .box-two {
+        display: flex;
+        flex-direction: column;
+        flex: 2;
+        padding: 5px;
+        margin-left: 20px;
+      }
+      img {
+        width: 100px;
+        height: 100px;
+      }
+      .section {
+        margin-top: 20px;
+      }
+      .section h2 {
+        color: #333;
+        text-decoration: underline;
+      }
+      .section h3 {
+        color: #333;
+      }
+      .section p {
+        color: #666;
+      }
+      .box-one .section h2 {
+        color: #ffffff;
+        text-decoration: underline;
+      }
+      .box-one .section p {
+        color: #ffffff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box-one">
+      <img src="{{image}}" alt="Avatar" />
+      <div class="section">
+        <h2>Personal Information</h2>
+        <p>Address: {{address}}</p>
+      </div>
+      <p>Email: {{email}}</p>
+      <div class="section">
+        <h2>SKILLS</h2>
+        <p>{{skills}}</p>
+      </div>
+      <div class="section">
+        <h2>Certifications</h2>
+        <p>{{certification_one}}</p>
+        <p>{{certification_two}}</p>
+      </div>
+    </div>
+    <div class="box-two">
+      <div>
+        <h1>{{name}}</h1>
+        <p>{{post}}</p>
+      </div>
+      <div class="section">
+        <h2>EXPERIENCE</h2>
+        <p>{{position}}</p>
+        <p>{{duration}}</p>
+        <p>{{organization_name}}</p>
+        <p>{{experience}}</p>
+      </div>
+      <div class="section">
+        <h2>EDUCATION</h2>
+        <p>{{degree}}</p>
+        <p>{{edu_organization_name}}</p>
+        <p>{{edu_duration}}</p>
+      </div>
+      <div class="section">
+        <h2>PROJECTS</h2>
+        <h3>{{project_name_one}}</h3>
+        <p>{{project_details_one}}</p>
+        <h3>{{project_name_two}}</h3>
+        <p>{{project_details_two}}</p>
+        <h3>{{project_name_three}}</h3>
+        <p>{{project_details_three}}</p>
+      </div>
+      <!-- <div class="section">
+        <h2>REFERENCES</h2>
+        <p>Reference 1: Name, Title, Affiliation, Contact Information</p>
+        <p>Reference 2: Name, Title, Affiliation, Contact Information</p>
+      </div> -->
+    </div>
+  </body>
+</html>

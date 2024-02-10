@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body style="display: flex; flex-direction: column">
+    <h1>Input Resume Details</h1>
+    <form
+      action="/resume"
+      method="POST"
+      style="display: flex; flex-direction: column; width: 60%"
+      enctype="multipart/form-data"
+    >
+      <label>Enter your image URL</label>
+      <input type="text" name="image" />
+      <label>Personal Information</label>
+      <input type="text" name="name" placeholder="Enter Name" />
+      <input type="text" name="post" placeholder="Enter Position" />
+      <input type="email" name="email" placeholder="Enter Email" />
+      <textarea name="address" placeholder="Enter Address"></textarea>
+      <textarea
+        name="skills"
+        placeholder="Enter Skills in comma separated format"
+      ></textarea>
+      <label>Enter Certification (Maximum 2)</label>
+      <input
+        type="text"
+        name="certification_one"
+        placeholder="Enter Certification one"
+      />
+      <input
+        type="text"
+        name="certification_two"
+        placeholder="Enter Certification two"
+      />
+      <label>Experience</label>
+      <input
+        type="text"
+        name="organization_name"
+        placeholder="Enter organization name"
+      />
+      <input type="text" name="position" placeholder="Enter Position" />
+      <input type="text" name="duration" placeholder="Enter Duration" />
+      <textarea name="experience" placeholder="Enter work summary "></textarea>
+      <label>Education</label>
+      <input
+        type="text"
+        name="edu_organization_name"
+        placeholder="Enter organization name"
+      />
+      <input type="text" name="degree" placeholder="Enter Degree" />
+      <input type="text" name="edu_duration" placeholder="Enter Duration" />
+      <label>Projects</label>
+      <input
+        type="text"
+        name="project_name_one"
+        placeholder="Enter Project name"
+      />
+      <textarea
+        name="project_details_one"
+        placeholder="Enter Project details"
+      ></textarea>
+      <input
+        type="text"
+        name="project_name_two"
+        placeholder="Enter Project name"
+      />
+      <textarea
+        name="project_details_two"
+        placeholder="Enter Project details"
+      ></textarea>
+      <input
+        type="text"
+        name="project_name_three"
+        placeholder="Enter Project name"
+      />
+      <textarea
+        name="project_details_three"
+        placeholder="Enter Project details"
+      ></textarea>
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
